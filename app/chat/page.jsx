@@ -62,7 +62,7 @@ const ChatComponent = () => {
         <div className="mb-24 mt-2">
           {messageHistory.map((message) => {
             return (
-              <div>
+              <div key={message}>
                 {message.author === "Server" && (
                   <div className="flex gap-x-2 justify-start w-3/4 my-3 mx-6 ">
                     <div>
